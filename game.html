@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone-frame">
+
+  <div class="box">
+    <h2>Catch the Heart! </h2>
+
+    <div id="heart" 
+      style="font-size:40px; position:absolute; top:300px; left:120px; cursor:pointer;">
+      💜
+    </div>
+
+    <button class="btn" onclick="location.href='love.html'">Next</button>
+  </div>
+</div>
+
+<script>
+const h = document.getElementById("heart");
+
+h.onclick = () => {
+  h.style.top = Math.random()*500 + "px";
+  h.style.left = Math.random()*250 + "px";
+};
+</script>
+
+</body>
+</html>
