@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone-frame">
+  <div class="box">
+    <h2>Do you love me? 💜</h2>
+
+    <button class="btn" onclick="location.href='wish.html'">YES</button>
+
+    <button class="btn no-move" id="noBtn">NO</button>
+  </div>
+</div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+
+noBtn.onmouseover = () => {
+  noBtn.style.left = Math.random()*200 + "px";
+  noBtn.style.top = Math.random()*200 + "px";
+};
+</script>
+
+</body>
+</html>
