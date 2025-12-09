@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h3>When is your birthday?</h3>
+
+    <input id="passInput" type="password" maxlength="4" style="text-align:center; font-size:20px; margin-top:15px; width:80%; border-radius:10px; padding:8px;">
+
+    <div class="keypad">
+        <div class="key" onclick="pressKey('1')">1</div>
+        <div class="key" onclick="pressKey('2')">2</div>
+        <div class="key" onclick="pressKey('3')">3</div>
+        <div class="key" onclick="pressKey('4')">4</div>
+        <div class="key" onclick="pressKey('5')">5</div>
+        <div class="key" onclick="pressKey('6')">6</div>
+        <div class="key" onclick="pressKey('7')">7</div>
+        <div class="key" onclick="pressKey('8')">8</div>
+        <div class="key" onclick="pressKey('9')">9</div>
+        <div class="key" onclick="deleteKey()">⌫</div>
+        <div class="key" onclick="pressKey('0')">0</div>
+        <div class="key" onclick="checkPass()">OK</div>
+    </div>
+
+    <p id="errorMsg" class="error"></p>
+</div>
+</body>
+</html>
