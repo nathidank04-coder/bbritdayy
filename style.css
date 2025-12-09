@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #f4e8ff, #e6cfff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* กรอบมือถือ */
+.phone-frame {
+  width: 360px;
+  height: 720px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 35px;
+  box-shadow: 0 0 40px rgba(180, 130, 255, 0.5);
+  padding: 25px;
+  backdrop-filter: blur(12px);
+  position: relative;
+  overflow: hidden;
+}
+
+/* หัวใจลอย */
+.heart {
+  position: absolute;
+  color: white;
+  font-size: 22px;
+  opacity: 0.7;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-800px) scale(1.5); }
+}
+
+/* ปุ่ม */
+.btn {
+  padding: 13px 22px;
+  margin-top: 20px;
+  background: #caaaff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px rgba(180, 120, 255, 0.6);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(170, 90, 255, 0.8);
+}
+
+/* กรอบข้อความ */
+.box {
+  text-align: center;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(180, 130, 255, 0.4);
+  backdrop-filter: blur(8px);
+}
+
+/* keypad */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.key {
+  padding: 18px;
+  font-size: 22px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(150, 50, 255, 0.4);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.key:active {
+  transform: scale(0.9);
+}
+
+/* ปุ่มไม่รักหนี */
+.no-move {
+  position: relative;
+}
